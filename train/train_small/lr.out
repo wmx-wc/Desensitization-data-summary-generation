@@ -1,0 +1,1297 @@
+Namespace(NUM_WORKERS=8, batch_size=128, decode_max_length=192, device='cuda:1', encode_max_length=192, epochs=620, filename=None, is_need_frozen=False, lr=0.0001, lr_decay_func='cosine', lrf=0.1, model_name='facebook/bart-base', n_accumulate=1, num_beams=2, num_warmup_steps=20, optimizer_name='AdamW', result_dir='./models/', root='/home/mixiangw/wmx/code_python/u2net/weights/4/1/videography/datacsv', seed=7, test_path='preliminary_a_test.csv', train_path='train.csv', vocab_size=1400, weight_decay=0.0)
+Start Tensorboard with "tensorboard --logdir=runs", view at http://localhost:6006/
+inputs 最大长度为： 148
+inputs 最大长度为： 146
+inputs 最大长度为： 146
+训练集长度： 16000
+验证集长度： 4000
+Data loaded successfully
+BartConfig {
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "classifier_dropout": 0.0,
+  "d_model": 256,
+  "decoder_attention_heads": 8,
+  "decoder_ffn_dim": 1024,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "encoder_attention_heads": 8,
+  "encoder_ffn_dim": 1024,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "forced_eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "mask_token_id": 4,
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "num_hidden_layers": 6,
+  "pad_token_id": 0,
+  "scale_embedding": false,
+  "transformers_version": "4.20.1",
+  "use_cache": true,
+  "vocab_size": 1400
+}
+
+hidden_size: 256
+d_model 256
+256 1400
+not loaded pre-trained model
+
+Model loaded successfully
+Optimizer configured successfully
+lr: 5e-06
+weight decay: 0.0
+lr: 1e-05
+weight decay: 0.0
+lr: 1.5e-05
+weight decay: 0.0
+lr: 2e-05
+weight decay: 0.0
+lr: 2.5e-05
+weight decay: 0.0
+lr: 3e-05
+weight decay: 0.0
+lr: 3.5e-05
+weight decay: 0.0
+lr: 4e-05
+weight decay: 0.0
+lr: 4.5e-05
+weight decay: 0.0
+lr: 5e-05
+weight decay: 0.0
+lr: 5.500000000000001e-05
+weight decay: 0.0
+lr: 6e-05
+weight decay: 0.0
+lr: 6.500000000000001e-05
+weight decay: 0.0
+lr: 7e-05
+weight decay: 0.0
+lr: 7.500000000000001e-05
+weight decay: 0.0
+lr: 8e-05
+weight decay: 0.0
+lr: 8.5e-05
+weight decay: 0.0
+lr: 9e-05
+weight decay: 0.0
+lr: 9.5e-05
+weight decay: 0.0
+lr: 0.0001
+weight decay: 0.0
+lr: 0.0001
+weight decay: 0.0
+lr: 9.999013075636805e-05
+weight decay: 0.0
+lr: 9.996052735444863e-05
+weight decay: 0.0
+lr: 9.991120277927223e-05
+weight decay: 0.0
+lr: 9.98421786662277e-05
+weight decay: 0.0
+lr: 9.97534852915723e-05
+weight decay: 0.0
+lr: 9.964516155915151e-05
+weight decay: 0.0
+lr: 9.951725498333448e-05
+weight decay: 0.0
+lr: 9.936982166817273e-05
+weight decay: 0.0
+lr: 9.920292628279099e-05
+weight decay: 0.0
+lr: 9.901664203302126e-05
+weight decay: 0.0
+lr: 9.881105062929221e-05
+weight decay: 0.0
+lr: 9.858624225078841e-05
+weight decay: 0.0
+lr: 9.834231550589462e-05
+weight decay: 0.0
+lr: 9.807937738894303e-05
+weight decay: 0.0
+lr: 9.779754323328192e-05
+weight decay: 0.0
+lr: 9.749693666068665e-05
+weight decay: 0.0
+lr: 9.717768952713513e-05
+weight decay: 0.0
+lr: 9.683994186497132e-05
+weight decay: 0.0
+lr: 9.648384182148252e-05
+weight decay: 0.0
+lr: 9.610954559391703e-05
+weight decay: 0.0
+lr: 9.571721736097089e-05
+weight decay: 0.0
+lr: 9.530702921077358e-05
+weight decay: 0.0
+lr: 9.487916106540466e-05
+weight decay: 0.0
+lr: 9.443380060197387e-05
+weight decay: 0.0
+lr: 9.397114317029974e-05
+weight decay: 0.0
+lr: 9.349139170722281e-05
+weight decay: 0.0
+lr: 9.299475664759069e-05
+weight decay: 0.0
+lr: 9.248145583195448e-05
+weight decay: 0.0
+lr: 9.195171441101669e-05
+weight decay: 0.0
+lr: 9.140576474687264e-05
+weight decay: 0.0
+lr: 9.084384631108883e-05
+weight decay: 0.0
+lr: 9.02662055796628e-05
+weight decay: 0.0
+lr: 8.967309592491052e-05
+weight decay: 0.0
+lr: 8.906477750432904e-05
+weight decay: 0.0
+lr: 8.844151714648276e-05
+weight decay: 0.0
+lr: 8.780358823396352e-05
+weight decay: 0.0
+lr: 8.715127058347615e-05
+weight decay: 0.0
+lr: 8.648485032310146e-05
+weight decay: 0.0
+lr: 8.5804619766791e-05
+weight decay: 0.0
+lr: 8.511087728614862e-05
+weight decay: 0.0
+lr: 8.440392717955476e-05
+weight decay: 0.0
+lr: 8.368407953869104e-05
+weight decay: 0.0
+lr: 8.295165011252398e-05
+weight decay: 0.0
+lr: 8.220696016880688e-05
+weight decay: 0.0
+lr: 8.14503363531613e-05
+weight decay: 0.0
+lr: 8.068211054579944e-05
+weight decay: 0.0
+lr: 7.99026197159505e-05
+weight decay: 0.0
+lr: 7.911220577405484e-05
+weight decay: 0.0
+lr: 7.831121542179087e-05
+weight decay: 0.0
+lr: 7.75e-05
+weight decay: 0.0
+lr: 7.667891533457719e-05
+weight decay: 0.0
+lr: 7.58483215803938e-05
+weight decay: 0.0
+lr: 7.500858306332173e-05
+weight decay: 0.0
+lr: 7.416006812042828e-05
+weight decay: 0.0
+lr: 7.330314893841101e-05
+weight decay: 0.0
+lr: 7.243820139034464e-05
+weight decay: 0.0
+lr: 7.156560487081053e-05
+weight decay: 0.0
+lr: 7.068574212948169e-05
+weight decay: 0.0
+lr: 6.979899910323624e-05
+weight decay: 0.0
+lr: 6.890576474687263e-05
+weight decay: 0.0
+lr: 6.800643086250122e-05
+weight decay: 0.0
+lr: 6.710139192768695e-05
+weight decay: 0.0
+lr: 6.619104492241846e-05
+weight decay: 0.0
+lr: 6.527578915497951e-05
+weight decay: 0.0
+lr: 6.435602608679918e-05
+weight decay: 0.0
+lr: 6.343215915635762e-05
+weight decay: 0.0
+lr: 6.250459360222461e-05
+weight decay: 0.0
+lr: 6.157373628530852e-05
+weight decay: 0.0
+lr: 6.06399955103937e-05
+weight decay: 0.0
+lr: 5.970378084704442e-05
+weight decay: 0.0
+lr: 5.87655029499542e-05
+weight decay: 0.0
+lr: 5.782557337881911e-05
+weight decay: 0.0
+lr: 5.6884404417813995e-05
+weight decay: 0.0
+lr: 5.594240889475107e-05
+weight decay: 0.0
+lr: 5.500000000000001e-05
+weight decay: 0.0
+lr: 5.405759110524895e-05
+weight decay: 0.0
+lr: 5.3115595582186016e-05
+weight decay: 0.0
+lr: 5.217442662118091e-05
+weight decay: 0.0
+lr: 5.123449705004581e-05
+weight decay: 0.0
+lr: 5.0296219152955604e-05
+weight decay: 0.0
+lr: 4.9360004489606314e-05
+weight decay: 0.0
+lr: 4.84262637146915e-05
+weight decay: 0.0
+lr: 4.74954063977754e-05
+weight decay: 0.0
+lr: 4.65678408436424e-05
+weight decay: 0.0
+lr: 4.5643973913200835e-05
+weight decay: 0.0
+lr: 4.47242108450205e-05
+weight decay: 0.0
+lr: 4.380895507758155e-05
+weight decay: 0.0
+lr: 4.2898608072313064e-05
+weight decay: 0.0
+lr: 4.1993569137498776e-05
+weight decay: 0.0
+lr: 4.109423525312738e-05
+weight decay: 0.0
+lr: 4.0201000896763766e-05
+weight decay: 0.0
+lr: 3.9314257870518325e-05
+weight decay: 0.0
+lr: 3.8434395129189505e-05
+weight decay: 0.0
+lr: 3.756179860965538e-05
+weight decay: 0.0
+lr: 3.669685106158899e-05
+weight decay: 0.0
+lr: 3.583993187957173e-05
+weight decay: 0.0
+lr: 3.499141693667828e-05
+weight decay: 0.0
+lr: 3.415167841960624e-05
+weight decay: 0.0
+lr: 3.3321084665422807e-05
+weight decay: 0.0
+lr: 3.249999999999999e-05
+weight decay: 0.0
+lr: 3.168878457820915e-05
+weight decay: 0.0
+lr: 3.088779422594517e-05
+weight decay: 0.0
+lr: 3.0097380284049527e-05
+weight decay: 0.0
+lr: 2.931788945420058e-05
+weight decay: 0.0
+lr: 2.854966364683872e-05
+weight decay: 0.0
+lr: 2.7793039831193136e-05
+weight decay: 0.0
+lr: 2.7048349887476037e-05
+weight decay: 0.0
+lr: 2.6315920461308964e-05
+weight decay: 0.0
+lr: 2.559607282044527e-05
+weight decay: 0.0
+lr: 2.488912271385138e-05
+weight decay: 0.0
+lr: 2.4195380233209008e-05
+weight decay: 0.0
+lr: 2.3515149676898555e-05
+weight decay: 0.0
+lr: 2.284872941652386e-05
+weight decay: 0.0
+lr: 2.219641176603649e-05
+weight decay: 0.0
+lr: 2.1558482853517257e-05
+weight decay: 0.0
+lr: 2.093522249567097e-05
+weight decay: 0.0
+lr: 2.0326904075089492e-05
+weight decay: 0.0
+lr: 1.9733794420337214e-05
+weight decay: 0.0
+lr: 1.915615368891117e-05
+weight decay: 0.0
+lr: 1.8594235253127375e-05
+weight decay: 0.0
+lr: 1.804828558898332e-05
+weight decay: 0.0
+lr: 1.7518544168045525e-05
+weight decay: 0.0
+lr: 1.7005243352409324e-05
+weight decay: 0.0
+lr: 1.6508608292777204e-05
+weight decay: 0.0
+lr: 1.602885682970027e-05
+weight decay: 0.0
+lr: 1.556619939802614e-05
+weight decay: 0.0
+lr: 1.5120838934595339e-05
+weight decay: 0.0
+lr: 1.4692970789226431e-05
+weight decay: 0.0
+lr: 1.428278263902913e-05
+weight decay: 0.0
+lr: 1.3890454406082968e-05
+weight decay: 0.0
+lr: 1.3516158178517474e-05
+weight decay: 0.0
+lr: 1.3160058135028691e-05
+weight decay: 0.0
+lr: 1.2822310472864884e-05
+weight decay: 0.0
+lr: 1.2503063339313356e-05
+weight decay: 0.0
+lr: 1.2202456766718093e-05
+weight decay: 0.0
+lr: 1.1920622611056975e-05
+weight decay: 0.0
+lr: 1.1657684494105387e-05
+weight decay: 0.0
+lr: 1.1413757749211602e-05
+weight decay: 0.0
+lr: 1.1188949370707787e-05
+weight decay: 0.0
+lr: 1.098335796697875e-05
+weight decay: 0.0
+lr: 1.0797073717209014e-05
+weight decay: 0.0
+lr: 1.0630178331827276e-05
+weight decay: 0.0
+lr: 1.0482745016665526e-05
+weight decay: 0.0
+lr: 1.0354838440848503e-05
+weight decay: 0.0
+lr: 1.0246514708427702e-05
+weight decay: 0.0
+lr: 1.0157821333772305e-05
+weight decay: 0.0
+lr: 1.008879722072778e-05
+weight decay: 0.0
+lr: 1.0039472645551373e-05
+weight decay: 0.0
+lr: 1.0009869243631953e-05
+weight decay: 0.0
+lr: 0.0001
+weight decay: 0.0
+lr: 9.999013075636805e-05
+weight decay: 0.0
+lr: 9.996052735444863e-05
+weight decay: 0.0
+lr: 9.991120277927223e-05
+weight decay: 0.0
+lr: 9.98421786662277e-05
+weight decay: 0.0
+lr: 9.97534852915723e-05
+weight decay: 0.0
+lr: 9.964516155915151e-05
+weight decay: 0.0
+lr: 9.951725498333448e-05
+weight decay: 0.0
+lr: 9.936982166817273e-05
+weight decay: 0.0
+lr: 9.920292628279099e-05
+weight decay: 0.0
+lr: 9.901664203302126e-05
+weight decay: 0.0
+lr: 9.881105062929221e-05
+weight decay: 0.0
+lr: 9.858624225078841e-05
+weight decay: 0.0
+lr: 9.834231550589462e-05
+weight decay: 0.0
+lr: 9.807937738894303e-05
+weight decay: 0.0
+lr: 9.779754323328192e-05
+weight decay: 0.0
+lr: 9.749693666068665e-05
+weight decay: 0.0
+lr: 9.717768952713513e-05
+weight decay: 0.0
+lr: 9.683994186497132e-05
+weight decay: 0.0
+lr: 9.648384182148252e-05
+weight decay: 0.0
+lr: 9.610954559391703e-05
+weight decay: 0.0
+lr: 9.571721736097089e-05
+weight decay: 0.0
+lr: 9.530702921077358e-05
+weight decay: 0.0
+lr: 9.487916106540466e-05
+weight decay: 0.0
+lr: 9.443380060197387e-05
+weight decay: 0.0
+lr: 9.397114317029974e-05
+weight decay: 0.0
+lr: 9.349139170722281e-05
+weight decay: 0.0
+lr: 9.299475664759069e-05
+weight decay: 0.0
+lr: 9.248145583195448e-05
+weight decay: 0.0
+lr: 9.195171441101669e-05
+weight decay: 0.0
+lr: 9.140576474687264e-05
+weight decay: 0.0
+lr: 9.084384631108883e-05
+weight decay: 0.0
+lr: 9.02662055796628e-05
+weight decay: 0.0
+lr: 8.967309592491052e-05
+weight decay: 0.0
+lr: 8.906477750432904e-05
+weight decay: 0.0
+lr: 8.844151714648276e-05
+weight decay: 0.0
+lr: 8.780358823396352e-05
+weight decay: 0.0
+lr: 8.715127058347615e-05
+weight decay: 0.0
+lr: 8.648485032310146e-05
+weight decay: 0.0
+lr: 8.5804619766791e-05
+weight decay: 0.0
+lr: 8.511087728614862e-05
+weight decay: 0.0
+lr: 8.440392717955476e-05
+weight decay: 0.0
+lr: 8.368407953869104e-05
+weight decay: 0.0
+lr: 8.295165011252398e-05
+weight decay: 0.0
+lr: 8.220696016880688e-05
+weight decay: 0.0
+lr: 8.14503363531613e-05
+weight decay: 0.0
+lr: 8.068211054579944e-05
+weight decay: 0.0
+lr: 7.99026197159505e-05
+weight decay: 0.0
+lr: 7.911220577405484e-05
+weight decay: 0.0
+lr: 7.831121542179087e-05
+weight decay: 0.0
+lr: 7.75e-05
+weight decay: 0.0
+lr: 7.667891533457719e-05
+weight decay: 0.0
+lr: 7.58483215803938e-05
+weight decay: 0.0
+lr: 7.500858306332173e-05
+weight decay: 0.0
+lr: 7.416006812042828e-05
+weight decay: 0.0
+lr: 7.330314893841101e-05
+weight decay: 0.0
+lr: 7.243820139034464e-05
+weight decay: 0.0
+lr: 7.156560487081053e-05
+weight decay: 0.0
+lr: 7.068574212948169e-05
+weight decay: 0.0
+lr: 6.979899910323624e-05
+weight decay: 0.0
+lr: 6.890576474687263e-05
+weight decay: 0.0
+lr: 6.800643086250122e-05
+weight decay: 0.0
+lr: 6.710139192768695e-05
+weight decay: 0.0
+lr: 6.619104492241846e-05
+weight decay: 0.0
+lr: 6.527578915497951e-05
+weight decay: 0.0
+lr: 6.435602608679918e-05
+weight decay: 0.0
+lr: 6.343215915635762e-05
+weight decay: 0.0
+lr: 6.250459360222461e-05
+weight decay: 0.0
+lr: 6.157373628530852e-05
+weight decay: 0.0
+lr: 6.06399955103937e-05
+weight decay: 0.0
+lr: 5.970378084704442e-05
+weight decay: 0.0
+lr: 5.87655029499542e-05
+weight decay: 0.0
+lr: 5.782557337881911e-05
+weight decay: 0.0
+lr: 5.6884404417813995e-05
+weight decay: 0.0
+lr: 5.594240889475107e-05
+weight decay: 0.0
+lr: 5.500000000000001e-05
+weight decay: 0.0
+lr: 5.405759110524895e-05
+weight decay: 0.0
+lr: 5.3115595582186016e-05
+weight decay: 0.0
+lr: 5.217442662118091e-05
+weight decay: 0.0
+lr: 5.123449705004581e-05
+weight decay: 0.0
+lr: 5.0296219152955604e-05
+weight decay: 0.0
+lr: 4.9360004489606314e-05
+weight decay: 0.0
+lr: 4.84262637146915e-05
+weight decay: 0.0
+lr: 4.74954063977754e-05
+weight decay: 0.0
+lr: 4.65678408436424e-05
+weight decay: 0.0
+lr: 4.5643973913200835e-05
+weight decay: 0.0
+lr: 4.47242108450205e-05
+weight decay: 0.0
+lr: 4.380895507758155e-05
+weight decay: 0.0
+lr: 4.2898608072313064e-05
+weight decay: 0.0
+lr: 4.1993569137498776e-05
+weight decay: 0.0
+lr: 4.109423525312738e-05
+weight decay: 0.0
+lr: 4.0201000896763766e-05
+weight decay: 0.0
+lr: 3.9314257870518325e-05
+weight decay: 0.0
+lr: 3.8434395129189505e-05
+weight decay: 0.0
+lr: 3.756179860965538e-05
+weight decay: 0.0
+lr: 3.669685106158899e-05
+weight decay: 0.0
+lr: 3.583993187957173e-05
+weight decay: 0.0
+lr: 3.499141693667828e-05
+weight decay: 0.0
+lr: 3.415167841960624e-05
+weight decay: 0.0
+lr: 3.3321084665422807e-05
+weight decay: 0.0
+lr: 3.249999999999999e-05
+weight decay: 0.0
+lr: 3.168878457820915e-05
+weight decay: 0.0
+lr: 3.088779422594517e-05
+weight decay: 0.0
+lr: 3.0097380284049527e-05
+weight decay: 0.0
+lr: 2.931788945420058e-05
+weight decay: 0.0
+lr: 2.854966364683872e-05
+weight decay: 0.0
+lr: 2.7793039831193136e-05
+weight decay: 0.0
+lr: 2.7048349887476037e-05
+weight decay: 0.0
+lr: 2.6315920461308964e-05
+weight decay: 0.0
+lr: 2.559607282044527e-05
+weight decay: 0.0
+lr: 2.488912271385138e-05
+weight decay: 0.0
+lr: 2.4195380233209008e-05
+weight decay: 0.0
+lr: 2.3515149676898555e-05
+weight decay: 0.0
+lr: 2.284872941652386e-05
+weight decay: 0.0
+lr: 2.219641176603649e-05
+weight decay: 0.0
+lr: 2.1558482853517257e-05
+weight decay: 0.0
+lr: 2.093522249567097e-05
+weight decay: 0.0
+lr: 2.0326904075089492e-05
+weight decay: 0.0
+lr: 1.9733794420337214e-05
+weight decay: 0.0
+lr: 1.915615368891117e-05
+weight decay: 0.0
+lr: 1.8594235253127375e-05
+weight decay: 0.0
+lr: 1.804828558898332e-05
+weight decay: 0.0
+lr: 1.7518544168045525e-05
+weight decay: 0.0
+lr: 1.7005243352409324e-05
+weight decay: 0.0
+lr: 1.6508608292777204e-05
+weight decay: 0.0
+lr: 1.602885682970027e-05
+weight decay: 0.0
+lr: 1.556619939802614e-05
+weight decay: 0.0
+lr: 1.5120838934595339e-05
+weight decay: 0.0
+lr: 1.4692970789226431e-05
+weight decay: 0.0
+lr: 1.428278263902913e-05
+weight decay: 0.0
+lr: 1.3890454406082968e-05
+weight decay: 0.0
+lr: 1.3516158178517474e-05
+weight decay: 0.0
+lr: 1.3160058135028691e-05
+weight decay: 0.0
+lr: 1.2822310472864884e-05
+weight decay: 0.0
+lr: 1.2503063339313356e-05
+weight decay: 0.0
+lr: 1.2202456766718093e-05
+weight decay: 0.0
+lr: 1.1920622611056975e-05
+weight decay: 0.0
+lr: 1.1657684494105387e-05
+weight decay: 0.0
+lr: 1.1413757749211602e-05
+weight decay: 0.0
+lr: 1.1188949370707787e-05
+weight decay: 0.0
+lr: 1.098335796697875e-05
+weight decay: 0.0
+lr: 1.0797073717209014e-05
+weight decay: 0.0
+lr: 1.0630178331827276e-05
+weight decay: 0.0
+lr: 1.0482745016665526e-05
+weight decay: 0.0
+lr: 1.0354838440848503e-05
+weight decay: 0.0
+lr: 1.0246514708427702e-05
+weight decay: 0.0
+lr: 1.0157821333772305e-05
+weight decay: 0.0
+lr: 1.008879722072778e-05
+weight decay: 0.0
+lr: 1.0039472645551373e-05
+weight decay: 0.0
+lr: 1.0009869243631953e-05
+weight decay: 0.0
+lr: 0.0001
+weight decay: 0.0
+lr: 9.999013075636805e-05
+weight decay: 0.0
+lr: 9.996052735444863e-05
+weight decay: 0.0
+lr: 9.991120277927223e-05
+weight decay: 0.0
+lr: 9.98421786662277e-05
+weight decay: 0.0
+lr: 9.97534852915723e-05
+weight decay: 0.0
+lr: 9.964516155915151e-05
+weight decay: 0.0
+lr: 9.951725498333448e-05
+weight decay: 0.0
+lr: 9.936982166817273e-05
+weight decay: 0.0
+lr: 9.920292628279099e-05
+weight decay: 0.0
+lr: 9.901664203302126e-05
+weight decay: 0.0
+lr: 9.881105062929221e-05
+weight decay: 0.0
+lr: 9.858624225078841e-05
+weight decay: 0.0
+lr: 9.834231550589462e-05
+weight decay: 0.0
+lr: 9.807937738894303e-05
+weight decay: 0.0
+lr: 9.779754323328192e-05
+weight decay: 0.0
+lr: 9.749693666068665e-05
+weight decay: 0.0
+lr: 9.717768952713513e-05
+weight decay: 0.0
+lr: 9.683994186497132e-05
+weight decay: 0.0
+lr: 9.648384182148252e-05
+weight decay: 0.0
+lr: 9.610954559391703e-05
+weight decay: 0.0
+lr: 9.571721736097089e-05
+weight decay: 0.0
+lr: 9.530702921077358e-05
+weight decay: 0.0
+lr: 9.487916106540466e-05
+weight decay: 0.0
+lr: 9.443380060197387e-05
+weight decay: 0.0
+lr: 9.397114317029974e-05
+weight decay: 0.0
+lr: 9.349139170722281e-05
+weight decay: 0.0
+lr: 9.299475664759069e-05
+weight decay: 0.0
+lr: 9.248145583195448e-05
+weight decay: 0.0
+lr: 9.195171441101669e-05
+weight decay: 0.0
+lr: 9.140576474687264e-05
+weight decay: 0.0
+lr: 9.084384631108883e-05
+weight decay: 0.0
+lr: 9.02662055796628e-05
+weight decay: 0.0
+lr: 8.967309592491052e-05
+weight decay: 0.0
+lr: 8.906477750432904e-05
+weight decay: 0.0
+lr: 8.844151714648276e-05
+weight decay: 0.0
+lr: 8.780358823396352e-05
+weight decay: 0.0
+lr: 8.715127058347615e-05
+weight decay: 0.0
+lr: 8.648485032310146e-05
+weight decay: 0.0
+lr: 8.5804619766791e-05
+weight decay: 0.0
+lr: 8.511087728614862e-05
+weight decay: 0.0
+lr: 8.440392717955476e-05
+weight decay: 0.0
+lr: 8.368407953869104e-05
+weight decay: 0.0
+lr: 8.295165011252398e-05
+weight decay: 0.0
+lr: 8.220696016880688e-05
+weight decay: 0.0
+lr: 8.14503363531613e-05
+weight decay: 0.0
+lr: 8.068211054579944e-05
+weight decay: 0.0
+lr: 7.99026197159505e-05
+weight decay: 0.0
+lr: 7.911220577405484e-05
+weight decay: 0.0
+lr: 7.831121542179087e-05
+weight decay: 0.0
+lr: 7.75e-05
+weight decay: 0.0
+lr: 7.667891533457719e-05
+weight decay: 0.0
+lr: 7.58483215803938e-05
+weight decay: 0.0
+lr: 7.500858306332173e-05
+weight decay: 0.0
+lr: 7.416006812042828e-05
+weight decay: 0.0
+lr: 7.330314893841101e-05
+weight decay: 0.0
+lr: 7.243820139034464e-05
+weight decay: 0.0
+lr: 7.156560487081053e-05
+weight decay: 0.0
+lr: 7.068574212948169e-05
+weight decay: 0.0
+lr: 6.979899910323624e-05
+weight decay: 0.0
+lr: 6.890576474687263e-05
+weight decay: 0.0
+lr: 6.800643086250122e-05
+weight decay: 0.0
+lr: 6.710139192768695e-05
+weight decay: 0.0
+lr: 6.619104492241846e-05
+weight decay: 0.0
+lr: 6.527578915497951e-05
+weight decay: 0.0
+lr: 6.435602608679918e-05
+weight decay: 0.0
+lr: 6.343215915635762e-05
+weight decay: 0.0
+lr: 6.250459360222461e-05
+weight decay: 0.0
+lr: 6.157373628530852e-05
+weight decay: 0.0
+lr: 6.06399955103937e-05
+weight decay: 0.0
+lr: 5.970378084704442e-05
+weight decay: 0.0
+lr: 5.87655029499542e-05
+weight decay: 0.0
+lr: 5.782557337881911e-05
+weight decay: 0.0
+lr: 5.6884404417813995e-05
+weight decay: 0.0
+lr: 5.594240889475107e-05
+weight decay: 0.0
+lr: 5.500000000000001e-05
+weight decay: 0.0
+lr: 5.405759110524895e-05
+weight decay: 0.0
+lr: 5.3115595582186016e-05
+weight decay: 0.0
+lr: 5.217442662118091e-05
+weight decay: 0.0
+lr: 5.123449705004581e-05
+weight decay: 0.0
+lr: 5.0296219152955604e-05
+weight decay: 0.0
+lr: 4.9360004489606314e-05
+weight decay: 0.0
+lr: 4.84262637146915e-05
+weight decay: 0.0
+lr: 4.74954063977754e-05
+weight decay: 0.0
+lr: 4.65678408436424e-05
+weight decay: 0.0
+lr: 4.5643973913200835e-05
+weight decay: 0.0
+lr: 4.47242108450205e-05
+weight decay: 0.0
+lr: 4.380895507758155e-05
+weight decay: 0.0
+lr: 4.2898608072313064e-05
+weight decay: 0.0
+lr: 4.1993569137498776e-05
+weight decay: 0.0
+lr: 4.109423525312738e-05
+weight decay: 0.0
+lr: 4.0201000896763766e-05
+weight decay: 0.0
+lr: 3.9314257870518325e-05
+weight decay: 0.0
+lr: 3.8434395129189505e-05
+weight decay: 0.0
+lr: 3.756179860965538e-05
+weight decay: 0.0
+lr: 3.669685106158899e-05
+weight decay: 0.0
+lr: 3.583993187957173e-05
+weight decay: 0.0
+lr: 3.499141693667828e-05
+weight decay: 0.0
+lr: 3.415167841960624e-05
+weight decay: 0.0
+lr: 3.3321084665422807e-05
+weight decay: 0.0
+lr: 3.249999999999999e-05
+weight decay: 0.0
+lr: 3.168878457820915e-05
+weight decay: 0.0
+lr: 3.088779422594517e-05
+weight decay: 0.0
+lr: 3.0097380284049527e-05
+weight decay: 0.0
+lr: 2.931788945420058e-05
+weight decay: 0.0
+lr: 2.854966364683872e-05
+weight decay: 0.0
+lr: 2.7793039831193136e-05
+weight decay: 0.0
+lr: 2.7048349887476037e-05
+weight decay: 0.0
+lr: 2.6315920461308964e-05
+weight decay: 0.0
+lr: 2.559607282044527e-05
+weight decay: 0.0
+lr: 2.488912271385138e-05
+weight decay: 0.0
+lr: 2.4195380233209008e-05
+weight decay: 0.0
+lr: 2.3515149676898555e-05
+weight decay: 0.0
+lr: 2.284872941652386e-05
+weight decay: 0.0
+lr: 2.219641176603649e-05
+weight decay: 0.0
+lr: 2.1558482853517257e-05
+weight decay: 0.0
+lr: 2.093522249567097e-05
+weight decay: 0.0
+lr: 2.0326904075089492e-05
+weight decay: 0.0
+lr: 1.9733794420337214e-05
+weight decay: 0.0
+lr: 1.915615368891117e-05
+weight decay: 0.0
+lr: 1.8594235253127375e-05
+weight decay: 0.0
+lr: 1.804828558898332e-05
+weight decay: 0.0
+lr: 1.7518544168045525e-05
+weight decay: 0.0
+lr: 1.7005243352409324e-05
+weight decay: 0.0
+lr: 1.6508608292777204e-05
+weight decay: 0.0
+lr: 1.602885682970027e-05
+weight decay: 0.0
+lr: 1.556619939802614e-05
+weight decay: 0.0
+lr: 1.5120838934595339e-05
+weight decay: 0.0
+lr: 1.4692970789226431e-05
+weight decay: 0.0
+lr: 1.428278263902913e-05
+weight decay: 0.0
+lr: 1.3890454406082968e-05
+weight decay: 0.0
+lr: 1.3516158178517474e-05
+weight decay: 0.0
+lr: 1.3160058135028691e-05
+weight decay: 0.0
+lr: 1.2822310472864884e-05
+weight decay: 0.0
+lr: 1.2503063339313356e-05
+weight decay: 0.0
+lr: 1.2202456766718093e-05
+weight decay: 0.0
+lr: 1.1920622611056975e-05
+weight decay: 0.0
+lr: 1.1657684494105387e-05
+weight decay: 0.0
+lr: 1.1413757749211602e-05
+weight decay: 0.0
+lr: 1.1188949370707787e-05
+weight decay: 0.0
+lr: 1.098335796697875e-05
+weight decay: 0.0
+lr: 1.0797073717209014e-05
+weight decay: 0.0
+lr: 1.0630178331827276e-05
+weight decay: 0.0
+lr: 1.0482745016665526e-05
+weight decay: 0.0
+lr: 1.0354838440848503e-05
+weight decay: 0.0
+lr: 1.0246514708427702e-05
+weight decay: 0.0
+lr: 1.0157821333772305e-05
+weight decay: 0.0
+lr: 1.008879722072778e-05
+weight decay: 0.0
+lr: 1.0039472645551373e-05
+weight decay: 0.0
+lr: 1.0009869243631953e-05
+weight decay: 0.0
+lr: 0.0001
+weight decay: 0.0
+lr: 9.999013075636805e-05
+weight decay: 0.0
+lr: 9.996052735444863e-05
+weight decay: 0.0
+lr: 9.991120277927223e-05
+weight decay: 0.0
+lr: 9.98421786662277e-05
+weight decay: 0.0
+lr: 9.97534852915723e-05
+weight decay: 0.0
+lr: 9.964516155915151e-05
+weight decay: 0.0
+lr: 9.951725498333448e-05
+weight decay: 0.0
+lr: 9.936982166817273e-05
+weight decay: 0.0
+lr: 9.920292628279099e-05
+weight decay: 0.0
+lr: 9.901664203302126e-05
+weight decay: 0.0
+lr: 9.881105062929221e-05
+weight decay: 0.0
+lr: 9.858624225078841e-05
+weight decay: 0.0
+lr: 9.834231550589462e-05
+weight decay: 0.0
+lr: 9.807937738894303e-05
+weight decay: 0.0
+lr: 9.779754323328192e-05
+weight decay: 0.0
+lr: 9.749693666068665e-05
+weight decay: 0.0
+lr: 9.717768952713513e-05
+weight decay: 0.0
+lr: 9.683994186497132e-05
+weight decay: 0.0
+lr: 9.648384182148252e-05
+weight decay: 0.0
+lr: 9.610954559391703e-05
+weight decay: 0.0
+lr: 9.571721736097089e-05
+weight decay: 0.0
+lr: 9.530702921077358e-05
+weight decay: 0.0
+lr: 9.487916106540466e-05
+weight decay: 0.0
+lr: 9.443380060197387e-05
+weight decay: 0.0
+lr: 9.397114317029974e-05
+weight decay: 0.0
+lr: 9.349139170722281e-05
+weight decay: 0.0
+lr: 9.299475664759069e-05
+weight decay: 0.0
+lr: 9.248145583195448e-05
+weight decay: 0.0
+lr: 9.195171441101669e-05
+weight decay: 0.0
+lr: 9.140576474687264e-05
+weight decay: 0.0
+lr: 9.084384631108883e-05
+weight decay: 0.0
+lr: 9.02662055796628e-05
+weight decay: 0.0
+lr: 8.967309592491052e-05
+weight decay: 0.0
+lr: 8.906477750432904e-05
+weight decay: 0.0
+lr: 8.844151714648276e-05
+weight decay: 0.0
+lr: 8.780358823396352e-05
+weight decay: 0.0
+lr: 8.715127058347615e-05
+weight decay: 0.0
+lr: 8.648485032310146e-05
+weight decay: 0.0
+lr: 8.5804619766791e-05
+weight decay: 0.0
+lr: 8.511087728614862e-05
+weight decay: 0.0
+lr: 8.440392717955476e-05
+weight decay: 0.0
+lr: 8.368407953869104e-05
+weight decay: 0.0
+lr: 8.295165011252398e-05
+weight decay: 0.0
+lr: 8.220696016880688e-05
+weight decay: 0.0
+lr: 8.14503363531613e-05
+weight decay: 0.0
+lr: 8.068211054579944e-05
+weight decay: 0.0
+lr: 7.99026197159505e-05
+weight decay: 0.0
+lr: 7.911220577405484e-05
+weight decay: 0.0
+lr: 7.831121542179087e-05
+weight decay: 0.0
+lr: 7.75e-05
+weight decay: 0.0
+lr: 7.667891533457719e-05
+weight decay: 0.0
+lr: 7.58483215803938e-05
+weight decay: 0.0
+lr: 7.500858306332173e-05
+weight decay: 0.0
+lr: 7.416006812042828e-05
+weight decay: 0.0
+lr: 7.330314893841101e-05
+weight decay: 0.0
+lr: 7.243820139034464e-05
+weight decay: 0.0
+lr: 7.156560487081053e-05
+weight decay: 0.0
+lr: 7.068574212948169e-05
+weight decay: 0.0
+lr: 6.979899910323624e-05
+weight decay: 0.0
+lr: 6.890576474687263e-05
+weight decay: 0.0
+lr: 6.800643086250122e-05
+weight decay: 0.0
+lr: 6.710139192768695e-05
+weight decay: 0.0
+lr: 6.619104492241846e-05
+weight decay: 0.0
+lr: 6.527578915497951e-05
+weight decay: 0.0
+lr: 6.435602608679918e-05
+weight decay: 0.0
+lr: 6.343215915635762e-05
+weight decay: 0.0
+lr: 6.250459360222461e-05
+weight decay: 0.0
+lr: 6.157373628530852e-05
+weight decay: 0.0
+lr: 6.06399955103937e-05
+weight decay: 0.0
+lr: 5.970378084704442e-05
+weight decay: 0.0
+lr: 5.87655029499542e-05
+weight decay: 0.0
+lr: 5.782557337881911e-05
+weight decay: 0.0
+lr: 5.6884404417813995e-05
+weight decay: 0.0
+lr: 5.594240889475107e-05
+weight decay: 0.0
+lr: 5.500000000000001e-05
+weight decay: 0.0
+lr: 5.405759110524895e-05
+weight decay: 0.0
+lr: 5.3115595582186016e-05
+weight decay: 0.0
+lr: 5.217442662118091e-05
+weight decay: 0.0
+lr: 5.123449705004581e-05
+weight decay: 0.0
+lr: 5.0296219152955604e-05
+weight decay: 0.0
+lr: 4.9360004489606314e-05
+weight decay: 0.0
+lr: 4.84262637146915e-05
+weight decay: 0.0
+lr: 4.74954063977754e-05
+weight decay: 0.0
+lr: 4.65678408436424e-05
+weight decay: 0.0
+lr: 4.5643973913200835e-05
+weight decay: 0.0
+lr: 4.47242108450205e-05
+weight decay: 0.0
+lr: 4.380895507758155e-05
+weight decay: 0.0
+lr: 4.2898608072313064e-05
+weight decay: 0.0
+lr: 4.1993569137498776e-05
+weight decay: 0.0
+lr: 4.109423525312738e-05
+weight decay: 0.0
+lr: 4.0201000896763766e-05
+weight decay: 0.0
+lr: 3.9314257870518325e-05
+weight decay: 0.0
+lr: 3.8434395129189505e-05
+weight decay: 0.0
+lr: 3.756179860965538e-05
+weight decay: 0.0
+lr: 3.669685106158899e-05
+weight decay: 0.0
+lr: 3.583993187957173e-05
+weight decay: 0.0
+lr: 3.499141693667828e-05
+weight decay: 0.0
+lr: 3.415167841960624e-05
+weight decay: 0.0
+lr: 3.3321084665422807e-05
+weight decay: 0.0
+lr: 3.249999999999999e-05
+weight decay: 0.0
+lr: 3.168878457820915e-05
+weight decay: 0.0
+lr: 3.088779422594517e-05
+weight decay: 0.0
+lr: 3.0097380284049527e-05
+weight decay: 0.0
+lr: 2.931788945420058e-05
+weight decay: 0.0
+lr: 2.854966364683872e-05
+weight decay: 0.0
+lr: 2.7793039831193136e-05
+weight decay: 0.0
+lr: 2.7048349887476037e-05
+weight decay: 0.0
+lr: 2.6315920461308964e-05
+weight decay: 0.0
+lr: 2.559607282044527e-05
+weight decay: 0.0
+lr: 2.488912271385138e-05
+weight decay: 0.0
+lr: 2.4195380233209008e-05
+weight decay: 0.0
+lr: 2.3515149676898555e-05
+weight decay: 0.0
+lr: 2.284872941652386e-05
+weight decay: 0.0
+lr: 2.219641176603649e-05
+weight decay: 0.0
+lr: 2.1558482853517257e-05
+weight decay: 0.0
+lr: 2.093522249567097e-05
+weight decay: 0.0
+lr: 2.0326904075089492e-05
+weight decay: 0.0
+lr: 1.9733794420337214e-05
+weight decay: 0.0
+lr: 1.915615368891117e-05
+weight decay: 0.0
+lr: 1.8594235253127375e-05
+weight decay: 0.0
+lr: 1.804828558898332e-05
+weight decay: 0.0
+lr: 1.7518544168045525e-05
+weight decay: 0.0
+lr: 1.7005243352409324e-05
+weight decay: 0.0
+lr: 1.6508608292777204e-05
+weight decay: 0.0
+lr: 1.602885682970027e-05
+weight decay: 0.0
+lr: 1.556619939802614e-05
+weight decay: 0.0
+lr: 1.5120838934595339e-05
+weight decay: 0.0
+lr: 1.4692970789226431e-05
+weight decay: 0.0
+lr: 1.428278263902913e-05
+weight decay: 0.0
+lr: 1.3890454406082968e-05
+weight decay: 0.0
+lr: 1.3516158178517474e-05
+weight decay: 0.0
+lr: 1.3160058135028691e-05
+weight decay: 0.0
+lr: 1.2822310472864884e-05
+weight decay: 0.0
+lr: 1.2503063339313356e-05
+weight decay: 0.0
+lr: 1.2202456766718093e-05
+weight decay: 0.0
+lr: 1.1920622611056975e-05
+weight decay: 0.0
+lr: 1.1657684494105387e-05
+weight decay: 0.0
+lr: 1.1413757749211602e-05
+weight decay: 0.0
+lr: 1.1188949370707787e-05
+weight decay: 0.0
+lr: 1.098335796697875e-05
+weight decay: 0.0
+lr: 1.0797073717209014e-05
+weight decay: 0.0
+lr: 1.0630178331827276e-05
+weight decay: 0.0
+lr: 1.0482745016665526e-05
+weight decay: 0.0
+lr: 1.0354838440848503e-05
+weight decay: 0.0
+lr: 1.0246514708427702e-05
+weight decay: 0.0
+lr: 1.0157821333772305e-05
+weight decay: 0.0
+lr: 1.008879722072778e-05
+weight decay: 0.0
+lr: 1.0039472645551373e-05
+weight decay: 0.0
+lr: 1.0009869243631953e-05
+weight decay: 0.0
