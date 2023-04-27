@@ -36,3 +36,13 @@
 
 1. EMA
 2. weight decay
+
+## 代码运行
+
+### 预训练
+
+train文件夹下，运行pretrain.py即可
+
+### 微调
+
+fune文件夹
